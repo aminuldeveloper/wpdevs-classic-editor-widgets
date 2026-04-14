@@ -24,11 +24,11 @@ msgstr "WPDevs ক্লাসিক এডিটর ও উইজেট"
 
 #: wpdevs-classic-editor-widgets.php:78
 msgid "Back To Traditional Editor"
-msgstr "ঐতিহ্যবাহী এডিটরে ফিরে যান"
+msgstr "ক্লাসিক এডিটরে ফিরে যান"
 
 #: wpdevs-classic-editor-widgets.php:86
 msgid "Back To Traditional Widgets"
-msgstr "ঐতিহ্যবাহী উইজেটে ফিরে যান"
+msgstr "ক্লাসিক উইজেটে ফিরে যান"
 
 #: wpdevs-classic-editor-widgets.php:133
 msgid "Settings"
