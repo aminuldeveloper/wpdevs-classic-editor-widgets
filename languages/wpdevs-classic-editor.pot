@@ -1,0 +1,32 @@
+# WPDevs Classic Editor & Widgets
+# Copyright (C) 2024 WPDevs
+# This file is distributed under the same license as the WPDevs Classic Editor & Widgets plugin.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WPDevs Classic Editor & Widgets 1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpdevs-classic-editor-widgets/\n"
+"POT-Creation-Date: 2026-04-14 00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Bengali\n"
+"Language: \n"
+"X-Generator: WPDevs\n"
+"X-Domain: wpdevs-classic-editor\n"
+
+#: wpdevs-classic-editor-widgets.php:71
+msgid "WPDevs Classic Editor & Widgets"
+msgstr ""
+
+#: wpdevs-classic-editor-widgets.php:78
+msgid "Back To Traditional Editor"
+msgstr ""
+
+#: wpdevs-classic-editor-widgets.php:86
+msgid "Back To Traditional Widgets"
+msgstr ""
+
+#: wpdevs-classic-editor-widgets.php:133
+msgid "Settings"
+msgstr ""

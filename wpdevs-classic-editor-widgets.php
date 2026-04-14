@@ -68,14 +68,14 @@ function wpdevs_ce_register_settings_to_writing_page() {
 
 	add_settings_section(
 		'wpdevs_classic_editor_general_settings',
-		'WPDevs Classic Editor & Widgets',
+		__( 'WPDevs Classic Editor & Widgets', 'wpdevs-classic-editor' ),
 		null,
 		'writing'
 	);
 
 	add_settings_field(
 		'disable_gutenberg',
-		'Back To Traditional Editor',
+		__( 'Back To Traditional Editor', 'wpdevs-classic-editor' ),
 		'wpdevs_ce_disable_gutenberg_cb',
 		'writing',
 		'wpdevs_classic_editor_general_settings'
@@ -83,7 +83,7 @@ function wpdevs_ce_register_settings_to_writing_page() {
 
 	add_settings_field(
 		'disable_gutenberg_widgets',
-		'Back To Traditional Widgets',
+		__( 'Back To Traditional Widgets', 'wpdevs-classic-editor' ),
 		'wpdevs_ce_disable_gutenberg_widgets_cb',
 		'writing',
 		'wpdevs_classic_editor_general_settings'
