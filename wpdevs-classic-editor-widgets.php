@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: WPDevs Classic Editor & Widgets
-Plugin URI: https://wordpress.org/plugins/search/wpdevs-classic-editor-widgets
+Plugin URI: https://wordpress.org/plugins/wpdevs-classic-editor-widgets/
 Description: Enables the traditional WordPress classic editor, classic widgets, and the previous version of the Edit Post screen featuring TinyMCE, Meta Boxes, and more. This also supports older plugins that enhance this screen.
 Version: 1.1
 Author: WPDevs
 Author URI: https://wpdevs.xyz
-License: GPLv2
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: wpdevs-classic-editor
 Domain Path: /languages
@@ -20,7 +20,7 @@ function wpdevs_ce_init() {
 
     if (get_option('wpdevs_classic_editor_settings') === false) {
         $default_options = array(
-            'disable_gutenberg' => 1,
+            'disable_gutenberg'         => 1,
             'disable_gutenberg_widgets' => 1,
         );
         add_option('wpdevs_classic_editor_settings', $default_options);
@@ -30,6 +30,7 @@ function wpdevs_ce_init() {
 
     if (isset($options['disable_gutenberg']) && $options['disable_gutenberg']) {
         add_filter('use_block_editor_for_post', '__return_false', 10);
+        add_filter('use_block_editor_for_post_type', '__return_false', 10);
     }
 
     if (isset($options['disable_gutenberg_widgets']) && $options['disable_gutenberg_widgets']) {
@@ -50,7 +51,7 @@ function wpdevs_ce_register_settings_to_writing_page() {
         'writing',
         'wpdevs_classic_editor_settings',
         array(
-            'sanitize_callback' => 'wpdevs_ce_sanitize_settings'
+            'sanitize_callback' => 'wpdevs_ce_sanitize_settings',
         )
     );
 
@@ -80,7 +81,7 @@ function wpdevs_ce_register_settings_to_writing_page() {
 
 function wpdevs_ce_sanitize_settings($input) {
     $output = array();
-    $output['disable_gutenberg'] = isset($input['disable_gutenberg']) && $input['disable_gutenberg'] == 1 ? 1 : 0;
+    $output['disable_gutenberg']         = isset($input['disable_gutenberg']) && $input['disable_gutenberg'] == 1 ? 1 : 0;
     $output['disable_gutenberg_widgets'] = isset($input['disable_gutenberg_widgets']) && $input['disable_gutenberg_widgets'] == 1 ? 1 : 0;
     return $output;
 }
@@ -100,7 +101,7 @@ function wpdevs_ce_disable_gutenberg_widgets_cb() {
 }
 
 function wpdevs_ce_add_settings_link($links) {
-    $settings_link = '<a href="' . admin_url('options-writing.php') . '">' . __('Settings', 'wpdevs-classic-editor') . '</a>';
+    $settings_link = '<a href="' . esc_url(admin_url('options-writing.php')) . '">' . __('Settings', 'wpdevs-classic-editor') . '</a>';
     array_unshift($links, $settings_link);
     return $links;
 }
