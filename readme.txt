@@ -1,5 +1,6 @@
 === Classic Editor & Classic Widgets by Aminul Islam ===
 Contributors: wpdevsxyz
+Donate link: https://www.buymeacoffee.com/wpdevsxyz
 Tags: classic editor, classic widgets, disable gutenberg, block editor, tinymce, gutenberg, disable block editor, traditional editor, widget, classic
 Requires at least: 6.0
 Tested up to: 7.0
@@ -41,6 +42,12 @@ You can switch back to Gutenberg anytime by simply unchecking the options.
 * Developers building sites with **older plugins** that need TinyMCE
 * Site owners who find the **block editor** confusing or complex
 * Anyone who wants a **simple, traditional WordPress experience**
+
+### Important Links
+
+* ❤️ Support my work: [Buy Me a Coffee](https://www.buymeacoffee.com/wpdevsxyz)
+* 📺 WordPress plugin tutorials: [WPDevs YouTube Channel](https://www.youtube.com/@wpdevs)
+* 🐙 Contribute or report issues: [GitHub](https://github.com/aminuldeveloper/wpdevs-classic-editor-widgets)
 
 == Installation ==
 
