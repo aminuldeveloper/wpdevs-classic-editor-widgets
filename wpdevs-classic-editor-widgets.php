@@ -3,7 +3,7 @@
     Plugin Name: WPDevs Classic Editor & Widgets
     Plugin URI: https://wordpress.org/plugins/search/wpdevs-classic-editor-widgets
     Description: Enables the traditional WordPress classic editor, classic widgets, and the previous version of the Edit Post screen featuring TinyMCE, Meta Boxes, and more. This also supports older plugins that enhance this screen.
-    Version: 1.0
+    Version: 1.1
     Author: WPDevs
     Author URI: https://wpdevs.xyz
     License: GPLv2

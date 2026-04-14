@@ -3,7 +3,7 @@ Contributors: wpdevsxyz
 Tags: classic editor, classic widgets, traditional editor, traditional widgets, disable Gutenberg
 Requires at least: 4.9
 Tested up to: 7.0
-Stable tag: 1.0
+Stable tag: 1.1
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -45,10 +45,13 @@ No, this plugin only modifies the editor and widget system, and it doesn't affec
 
 == Changelog ==
 
+= 1.1 =
+* Update tested up to WordPress 7.0
+
 = 1.0 =
 * Initial release
 
 == Upgrade Notice ==
 
-= 1.0 =
-* Initial release
+= 1.1 =
+* Update tested up to WordPress 7.0
